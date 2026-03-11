@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>About Us - HomeFinder</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+.aboutWrap{
+
+max-width:1200px;
+margin:40px auto;
+
+}
+
+
+.aboutBox{
+
+display:flex;
+
+background:rgba(255,255,255,0.05);
+
+backdrop-filter:blur(10px);
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.6);
+
+}
+
+
+/* LEFT */
+
+.aboutLeft{
+
+flex:1;
+padding:40px;
+
+}
+
+
+.aboutLeft h1{
+
+font-size:42px;
+
+}
+
+.aboutLeft span{
+
+color:#f59d56;
+
+}
+
+
+.aboutLeft p{
+
+line-height:1.6;
+margin:10px 0;
+
+}
+
+
+/* RIGHT */
+
+
+
+.aboutRight{
+
+flex:1;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+
+.profileCard{
+
+width:450px;
+
+max-width:100%;
+
+}
+
+
+.profileCard img{
+
+width:100%;
+
+height:350px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+margin-bottom:15px;
+
+}
+
+
+.profileCard h3{
+
+margin:5px 0;
+
+}
+
+
+.profileCard p{
+
+font-size:14px;
+opacity:0.9;
+
+}
+
+
+.info{
+
+margin-top:10px;
+
+background:rgba(255,255,255,0.1);
+
+padding:10px;
+
+border-radius:10px;
+
+}
+
+
+@media(max-width:900px){
+
+.aboutBox{
+flex-direction:column;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<nav>
+
+<h2>HomeFinder</h2>
+
+<a href="index.html">Home</a>
+<a href="properties.html">Properties</a>
+<a href="about.html">About</a>
+<a href="bookings.html">Bookings</a>
+
+<div id="authArea">
+
+<a href="login.html" id="loginBtn">Login</a>
+<a href="signup.html" id="signupBtn">Signup</a>
+
+<button onclick="logout()" id="logoutBtn">
+Logout
+</button>
+
+</div>
+
+</nav>
+
+
+
+<div class="aboutWrap">
+
+
+<div class="aboutBox">
+
+
+<div class="aboutLeft">
+
+<h1>About <span>Us</span></h1>
+
+<p>
+
+HomeFinder is a modern real estate platform designed to help users
+find their dream home easily and safely.
+
+Our mission is to provide a smooth and professional property
+experience with secure booking and fast search.
+
+</p>
+
+<p>
+
+This website is designed and developed by a passionate developer
+who wants to make real estate simple for everyone.
+
+</p>
+
+<p>
+
+We focus on trust, quality, and modern design.
+
+</p>
+
+</div>
+
+
+
+<div class="aboutRight">
+
+
+<div class="profileCard">
+
+
+<img src="image/about image.png">
+
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<script type="module" src="js/auth.js"></script>
+
+</body>
+</html>

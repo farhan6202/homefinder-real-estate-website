@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Edit Property - HomeFinder</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav>
+
+<h2>HomeFinder</h2>
+
+<a href="index.html">Home</a>
+<a href="properties.html">Properties</a>
+<a href="add-property.html">Add</a>
+<a href="my.html">My</a>
+<a href="bookings.html">Bookings</a>
+<a href="admin.html">Admin</a>
+
+<div id="authArea">
+
+<a href="login.html" id="loginBtn">Login</a>
+<a href="signup.html" id="signupBtn">Signup</a>
+
+<button onclick="logout()" id="logoutBtn">
+Logout
+</button>
+
+</div>
+
+</nav>
+<h1>Edit Property</h1>
+
+
+<input id="title" placeholder="Title"><br><br>
+
+<input id="city" placeholder="City"><br><br>
+
+<input id="price" placeholder="Price"><br><br>
+
+<input id="image" placeholder="Image URL"><br><br>
+
+
+<button onclick="update()">
+Update
+</button>
+
+
+<div id="list"></div>
+
+<script type="module" src="js/auth.js"></script>
+<script type="module" src="js/property.js"></script>
+
+
+</body>
+
+</html>

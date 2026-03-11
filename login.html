@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Login - HomeFinder</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.centerBox{
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.formBox{
+
+width:350px;
+
+background:rgba(255,255,255,0.08);
+
+backdrop-filter:blur(10px);
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.6);
+
+text-align:center;
+
+}
+
+.formBox h1{
+
+margin-bottom:20px;
+
+}
+
+.formBox input{
+
+width:100%;
+padding:10px;
+margin:10px 0;
+
+border:none;
+border-radius:8px;
+
+background:rgba(255,255,255,0.2);
+color:white;
+
+}
+
+.formBox button{
+
+width:100%;
+padding:10px;
+
+background:#f59d56;
+
+border:none;
+border-radius:8px;
+
+}
+
+.roleBox{
+
+margin:10px 0;
+text-align:left;
+
+}
+
+.roleBox label{
+
+font-size:14px;
+opacity:0.8;
+
+}
+
+.roleSelect{
+
+width:100%;
+
+padding:10px;
+
+border:none;
+
+border-radius:8px;
+
+background:rgba(255,255,255,0.2);
+
+color:white;
+
+margin-top:5px;
+
+outline:none;
+
+}
+
+.roleSelect option{
+
+color:black;
+
+}
+</style>
+
+</head>
+
+<body>
+
+
+<div class="centerBox">
+
+
+<div class="formBox">
+
+<h1>Login</h1>
+
+<div class="roleBox">
+
+<label>Login Type</label>
+
+<select id="role" class="roleSelect">
+
+<option value="user">User Login</option>
+
+<option value="admin">Admin Login</option>
+
+</select>
+
+</div>
+
+<input id="email" placeholder="Email">
+
+<input id="pass" placeholder="Password">
+
+<button onclick="login()">
+Login
+</button>
+
+<br><br>
+
+<a href="signup.html">Create account</a>
+
+</div>
+
+
+</div>
+
+
+<script type="module" src="js/auth.js"></script>
+
+</body>
+</html>

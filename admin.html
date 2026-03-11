@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Admin Panel</title>
+
+<link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+
+<script type="module">
+
+import { protect } from "./js/auth.js";
+
+protect();
+
+</script>
+
+
+<nav>
+
+<a href="admin.html">Home</a>
+
+<a href="add-property.html">Add Property</a>
+
+<a href="bookings.html">Bookings</a>
+
+<button class="logout" onclick="logout()">
+Logout
+</button>
+
+</nav>
+
+
+<h1 style="text-align:center">
+Admin Dashboard
+</h1>
+
+
+<div class="dashboard">
+
+<div class="box">
+<a href="add-property.html">
+Add Property
+</a>
+</div>
+
+<div class="box">
+<a href="bookings.html">
+Bookings
+</a>
+</div>
+
+<div class="box">
+<a href="index.html">
+User Site
+</a>
+</div>
+
+</div>
+
+
+<script type="module" src="js/auth.js"></script>
+
+</body>
+</html>

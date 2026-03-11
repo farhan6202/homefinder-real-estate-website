@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HomeFinder</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <script type="module">
+
+import "./js/auth.js";
+
+protect();
+
+</script>
+
+<nav>
+
+<h2>HomeFinder</h2>
+
+<a href="index.html">Home</a>
+<a href="properties.html">Properties</a>
+<a href="add-property.html" id="addLink">Add</a>
+<a href="about.html">About</a>
+<a href="bookings.html">Bookings</a>
+<a href="admin.html" id="adminLink">Admin</a>
+
+<div id="authArea">
+
+<a href="login.html" id="loginBtn">Login</a>
+<a href="signup.html" id="signupBtn">Signup</a>
+
+<button onclick="logout()" id="logoutBtn">
+Logout
+</button>
+
+</div>
+
+</nav>
+
+<h1>Property Details</h1>
+
+
+<div id="one"></div>
+<h3>Comments</h3>
+
+<input id="commentText">
+
+<button onclick="addComment()">
+Add Comment
+</button>
+
+<div id="comments"></div>
+
+
+<script type="module" src="js/auth.js"></script>
+<script type="module" src="js/property.js"></script>
+
+<script>
+
+let role = localStorage.getItem("role");
+
+let add = document.getElementById("addLink");
+let admin = document.getElementById("adminLink");
+
+if (role !== "admin") {
+
+if (add) add.style.display = "none";
+if (admin) admin.style.display = "none";
+
+}
+
+</script>
+
+</body>
+</html>
+</body>
+
+</html>

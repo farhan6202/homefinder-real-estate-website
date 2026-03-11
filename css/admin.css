@@ -1,0 +1,64 @@
+body{
+
+margin:0;
+font-family:Poppins;
+
+background:#111;
+color:white;
+
+}
+
+
+nav{
+
+display:flex;
+gap:15px;
+padding:12px 20px;
+
+background:#000;
+
+align-items:center;
+
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+padding:6px 12px;
+
+}
+
+nav a:hover{
+
+background:#f59d56;
+color:black;
+
+}
+
+.logout{
+
+margin-left:auto;
+
+}
+
+.dashboard{
+
+max-width:1000px;
+margin:40px auto;
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+}
+
+.box{
+
+background:#222;
+padding:30px;
+border-radius:10px;
+text-align:center;
+
+}
